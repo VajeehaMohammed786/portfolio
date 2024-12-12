@@ -1,13 +1,14 @@
 // src/pages/index.js
-import Header from '../components/Header';
+import React from 'react';
+import Navbar from '../components/Navbar'; // Import the Navbar component
 
 const Home = () => {
   return (
     <div>
-      <Header />
-      <main className="container mx-auto p-4">
-        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-        <p>This is a brief introduction to who I am and my work.</p>
+      <Navbar />
+      <main style={{ paddingTop: '60px' }}> {/* Add padding to prevent navbar from overlapping */}
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the home page.</p>
       </main>
     </div>
   );
